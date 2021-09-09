@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 import os
+
 
 def update_output():
 	# clears the screen, then uses nested for loops to print the array
