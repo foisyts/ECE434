@@ -1,0 +1,35 @@
+1. What's the min and max voltage?
+    The min was -55mV, while the max was 3.5V
+
+2. What period and frequency is it?
+    The period was 240.5ms and the frequency was 5.16Hz
+
+3. How close is it to 100ms?
+    Not very close -- it was off by 140.5ms
+
+4. Why do they differ? 
+    togglegpio does some setup and sleeping before execution, slowing down the period
+
+5. Run htop and see how much processor you are using. 
+    Currently, it is using 3.5% CPU
+
+6. What's the shortest period you can get using sleep time? 
+.1s/3.5%/0.2405
+.05s/5.9%/0.144
+.01s/12.8%/0.059
+.001s/18.4%/0.048
+
+7. How stable is the period?
+    The period is progressively less stable as freq increaases
+
+8. Try launching something like vi. How stable is the period?
+    The period becomes more unstable using vi - it is very unstable
+
+9. Try cleaning up togglegpio and removing unneeded lines. Does it impact the period?   
+    Yes, the period becomes becomes shorter after removing unneeded lines.
+
+10. togglegpio uses bash (first line in files). Try using sh. Is the period shorter? 
+    The period becomes shorter using sh. 
+
+11. What's the shortest period you can get? 
+The shortest I saw was 14.9 ms
