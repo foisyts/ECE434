@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
-import os
 import Adafruit_BBIO.GPIO as GPIO
 import smbus
 import time
 
-bus = smbus.SMBus(2)  # Use i2c bus 1
-matrix = 0x70         # Use address 0x70
+bus = smbus.SMBus(2)  # Use i2c bus 2
+matrix = 0x70         # Use address 0x70 for LED array
 
 bus.write_byte_data(matrix, 0x21, 0)   # Start oscillator (p10)
 bus.write_byte_data(matrix, 0x81, 0)   # Disp on, blink off (p11)
 bus.write_byte_data(matrix, 0xe7, 0)   # Full brightness (page 15)
 
-# Specifies the start position for the cursor the leftmost 2 columns and the  
-# top row are reserved to give the grid numbers to make it more visually 
-# appealing
+# Specifies the start position for the cursor in the top right corner of the LED 
+# array
 current_width = 0
 current_height = 0
 
@@ -64,7 +62,8 @@ def callback4(channel):
         update_output()
     
 def update_output():
-	# clears the screen, then uses nested for loops to print the array
+	# maps the 2D array to the LED array, which is done by calculating binary 
+    # value and sending them to the i2c bus (nested loop implementation)
     for l in range(size):
         curSum = 0
         for k in range(size):
@@ -76,12 +75,14 @@ def update_output():
     bus.write_i2c_block_data(matrix, 0, ledVals)
 		
 def clear_etcher():
-	# Uses nested for loops to empty the array, 
+	# Uses nested for loops to empty the 2D array 
 	for row in range(0, size):
 		for col in range(0, size):
 			array[row][col] = " "
 	update_output()
 
+# Setup for 8x8 matrix size, including 8x8 2D array to store visited squares 
+# and 1D array to store binary values for LED array
 size = 8
 array = [[" " for i in range (size)] for j in range(size)]
 ledVals = [0 for i in range (size *2)]
