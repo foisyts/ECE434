@@ -33,3 +33,22 @@ so far (with the exception of the current cursor position)
 ## Security
 For security, I configured my bone so it could only be accessed on port 1010. I then 
 made it so that fail2ban triggered a 15-second lockout when ssh is failed twice. 
+
+
+# hw02 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  2/2 | Buttons and LEDs 
+|  7/7 | Etch-a-Sketch works
+|      | Measuring a gpio pin on an Oscilloscope 
+|  2/2 | Questions answered
+|  4/4 | Table complete
+|  2/2 | gpiod
+|      | Security
+|  1/1 | ssh port
+|  1/1 | iptables
+|  1/1 | fail2ban
+| 20/20   | **Total**
+
+Nice videos.
