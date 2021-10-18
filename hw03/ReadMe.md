@@ -27,3 +27,15 @@ This implementation of the LED matrix is interesting as it translates the 2D
 matrix used previously into the binary input used by the LED i2c. The math 
 involved uses nested for loops to track column info, which is used to use powers
 of 2 to get the correct value as the cursor moves across the screen. 
+
+# hw03 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  5/5 | TMP101 
+|  3/3 |   | setup.sh
+|  2/2 |   | Documentation 
+|  0/5 | Etch-a-Sketch | Not Demo'ed - Demo for more credit
+|  3/3 |   | setup.sh
+|  2/2 |   | Documentation
+| 15/20 | **Total**
