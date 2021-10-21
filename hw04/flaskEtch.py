@@ -47,10 +47,14 @@ ledVals = [0 for i in range (size *2)]
 array[current_height][current_width] = "X"
 update_output()
 
+# routing to connect to HTML page that influences device hardware
 @app.route("/")
 def index():
     return render_template('index.html')
-    
+
+# Action listener, that changes the appropriate LED position based on what button
+# is pressed. Checks HTML webpage for button clicks to infulence hardware. Updates
+# output after any change. 
 @app.route("/<deviceName>/<action>")
 def action(deviceName, action):
     global current_height, current_width, array
@@ -78,5 +82,6 @@ def action(deviceName, action):
         clear_etcher()
     return render_template('index.html')
     
+# setup for HTML page, connection between 2 devices established here
 if __name__ == "__main__":
     app.run(port=8081, host='0.0.0.0', debug=True)
