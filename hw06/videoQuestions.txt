@@ -1,14 +1,18 @@
 1. Where does Julia Cartwright work?
+Julia Cartwright works at National Instruments.
 
-
-2. What is PREEMT_RT? Hint:Google it.
-
+2. What is PREEMPT_RT? Hint:Google it.
+PREEMPT_RT is a real-time version of Linux that removes unbounded latencies; it can provide a  
+smoother Linux experience by modifying the kernel.
 
 3. What is mixed criticality? 
-
+Mixed criticality is defined as the case when different tasks have different temporal 
+sensitivities. Essentially, mixed criticality is when some tasks are time-critical at the 
+same time that some are not. 
 
 4. How can drivers misbehave? 
-
+Drivers can misbehave when non-RT tasks are scheduled before RT tasks. This happens because
+driver stacks are shared between tasks in PREEMPT_RT, which can lead to scheduling issues.
 
 5. What is (delta) in Figure 1? 
 
