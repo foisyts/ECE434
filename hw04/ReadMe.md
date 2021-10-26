@@ -45,3 +45,19 @@ sudo fbi -noverbose -T 1 -a boris.jpg
 and to display RedsNightmare.mpg:
 
 mplayer -vo fbdev2 -nolirc -framedrop RedsNightmare.mpg
+
+# hw04 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  0/2 | Memory map 
+|  4/4 | mmap()
+|  4/4 | i2c via Kernel
+|  5/5 | Etch-a-Sketch via flask
+|  5/5 | LCD display
+|      | Extras
+| 18/20 | **Total**
+-2 Late
+
+*My comments are in italics. --may*
+
