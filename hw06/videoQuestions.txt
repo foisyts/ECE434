@@ -33,3 +33,18 @@ driver stacks are shared between tasks in PREEMPT_RT, which can lead to scheduli
 
 
 11. Why can the External event in Figure 4 start sooner?
+
+# hw06 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  2/2 | Project 
+|  2/5 | Questions
+|  0/4 | PREEMPT_RT
+|  0/2 | Plots to 500 us
+|  0/5 | Plots - Heavy/Light load
+|  0/2 | Extras
+| 4/20 | **Total**
+
+*My comments are in italics. --may*
+
