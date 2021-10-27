@@ -15,21 +15,31 @@ Drivers can misbehave when non-RT tasks are scheduled before RT tasks. This happ
 driver stacks are shared between tasks in PREEMPT_RT, which can lead to scheduling issues.
 
 5. What is (delta) in Figure 1? 
-
+Delta is the time it takes for a real-time task to be executed after an external event has 
+taken place. 
 
 6. What is Cylictest[2]?
-
+Cyclictest is a test for measuring the latency between an event and a task by measuring a
+timestamp, sleeping, then measuring another timestamp to measure the difference delta. 
 
 7. What is plotted in Figure 2? 
-
+Figure 2 shows a cyclictest histogram that illustrates the difference between preempt and 
+preempt_rt. Note the delta showing longer latency for normal preempt as opposed to 
+preempt_rt.
 
 8. What is dispatch latency? Scheduling latency?
-
+Dispatch latency is how long the system takes in between being told to run a thread and a
+events's actual execution. Scheduling latency is the amount of time it takes for for a 
+task to be executed by the CPU once the scheduler is made aware of a task. 
 
 9. What is mainline? 
-
+Mainline is a model that is characterized by its long interrupts that cause dispatch 
+latencies.
 
 10. What is keeping the External event in Figure 3 from starting?
-
+The External event in Figure 3 is not starting because the non-critical interrupt must 
+finish its execution before it can begin. 
 
 11. Why can the External event in Figure 4 start sooner?
+The External event in Figure 4 can start sooner because IRQ threads are forced, which 
+means that the the threads can be preempted due to the small amount of code.
