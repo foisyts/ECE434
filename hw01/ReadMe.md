@@ -38,5 +38,7 @@
 |  2 | install.sh included if needed
 |  2 | Used hw01 directory
 |  2 | ReadMe.md included
-|  1 | Name in gitLearn and gitLearnFork (missing)
-| 19 | **Total**
+|  2 | Name in gitLearn and gitLearnFork (missing)
+| 20 | **Total**
+
+*Fixed gitLearnFork*

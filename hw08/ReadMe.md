@@ -14,3 +14,15 @@ Here is a table that compares the results for the PWM parts:
 TEST - FILL THIS IN LATER
 |File|Frequency|
 |file1|freq Hz|
+
+ hw08 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+| 4/14 | PRU
+|  0/2 | Controlling the PWM Frequency - optional
+|  0/2 | Reading an Input at Regular Intervals - optional
+|  0/2 | Analog Wave Generator - optional
+|1/20 | **Total**
+
+*My comments are in italics. --may*
