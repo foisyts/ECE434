@@ -1,6 +1,3 @@
-## What's here?
-PENDING - WILL FILL IN LATER
-
 ## Blinking an LED - questions 
 What make command causes the LED code to run?
     -   The code is ran using "make TARGET=ledP9_31.pru0"
