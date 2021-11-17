@@ -12,5 +12,7 @@ What make command stops the LED code from running?
 Here is a table that compares the results for the PWM parts:
 
 TEST - FILL THIS IN LATER
+
 |File|Frequency|
+| --- | --- |
 |file1|freq Hz|
