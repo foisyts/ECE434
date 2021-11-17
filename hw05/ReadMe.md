@@ -10,3 +10,18 @@ both allow the makefile to execute.
 ## Kernel 
 Kernel could not be changed as it kept stalling during download - not sure
 how to fix 
+
+# hw05 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  0/0 | Project 
+|  2/2 | Makefile
+|  0/6 | Kernel Source
+|  0/4 | Etch-a-Sketch
+|  0/8 | Kernel Modules: hello, ebbchar, gpio_test, led
+|  0/4 | Extras - Blink at different rates
+| 2/20 | **Total**
+
+*My comments are in italics. --may*
+

@@ -13,3 +13,16 @@ sheetsScreenshot.jpg is a picture file that shows the state of the google sheet
 as of 8:17AM on 11/17/2021.
 
 Link to Google Sheet: https://docs.google.com/spreadsheets/d/1AGbQwgR-XIxR-LwQ-O8FJuPdeU2glmY124VALBUCHgE/edit#gid=0
+
+# hw09 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  0/5 | Timeline
+|  3/3 | MAX31820
+| 7/10 | Logging to Sheets | No plot
+|  0/2 | Extras
+| 10/20 | **Total**
+
+*My comments are in italics. --may*
+

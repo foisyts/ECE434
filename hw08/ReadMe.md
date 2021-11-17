@@ -31,14 +31,14 @@ Here is a table that compares the results for the PWM parts:
 |ledP9_31.pru0.c|12.48 MHz|
 |file2|50 MHz|
 
- hw08 grading
+# hw08 grading
 
 | Points      | Description |
 | ----------- | ----------- |
-| 4/14 | PRU
+| 10/14 | PRU
 |  0/2 | Controlling the PWM Frequency - optional
 |  0/2 | Reading an Input at Regular Intervals - optional
 |  0/2 | Analog Wave Generator - optional
-|1/20 | **Total**
+|10/20 | **Total**
 
 *My comments are in italics. --may*
